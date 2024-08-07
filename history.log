@@ -1,0 +1,1000 @@
+   51  tree
+   52  exit
+   53  ls
+   54  mkdir projs
+   55  cd projs/
+   56  mkdir clab
+   57  ls
+   58  cd clab/
+   59  tree
+   60  cd ..
+   61  tree
+   62  pwd
+   63  ls
+   64  cd clab
+   65  mkdir sample01
+   66  cd sample01/
+   67  tree
+   68  ls
+   69  touch srl02.clab.yml
+   70  vim srl02.clab.yml 
+   71  ls
+   72  touch srl1.cfg srl2.cfg
+   73  vim srl1.cfg 
+   74  vim srl2.cfg 
+   75  docker images | grep -E "srlinux|ceos"
+   76  containerlab -h
+   77  containerlab deploy -t./ srl02.clab.yml 
+   78  containerlab deploy -t ./srl02.clab.yml 
+   79  ping 172.20.20.2
+   80  containerlab -h
+   81  containerlab inspect
+   82  ssh admin@172.20.20.2
+   83  ssh admin@clab-srl02-srl1
+   84  docker container ls
+   85  docker exec -it clab-srl02-srl1 sr_cli
+   86  containerlab -h
+   87  containerlab destroy
+   88  hcpu
+   89  htop
+   90  exit
+   91  htop
+   92  exit
+   93  docker ls
+   94  docker image
+   95  docker image ls
+   96  history 
+   97  pwd
+   98  ls
+   99  cd projs/
+  100  ls
+  101  cd clab/
+  102  ls
+  103  cd sample01/
+  104  ls
+  105  tree
+  106  ls
+  107  history 
+  108  containerlab deploy -t ./srl02.clab.yml 
+  109  containerlab destroy -t ./srl02.clab.yml 
+  110  exit
+  111  htop
+  112  exit
+  113  htop
+  114  containerlab deploy -t ./srl02.clab.yml 
+  115  ls
+  116  cd projs/clab/
+  117  ls
+  118  cd sample01/
+  119  ls
+  120  containerlab deploy -t ./srl02.clab.yml 
+  121  containerlab destroy -t ./srl02.clab.yml 
+  122  exit
+  123  pwd
+  124  ls
+  125  cd projs/
+  126  ls
+  127  cd clab
+  128  ls
+  129  mkdir images
+  130  cd images/
+  131  pwd
+  132  ls
+  133  lsoft
+  134  lsof
+  135  lsof -i
+  136  ls
+  137  exit
+  138  ls
+  139  cd projs/
+  140  ls
+  141  cd clab/
+  142  ls
+  143  cd images/
+  144  ls
+  145  ls -la
+  146  docker import cEOS64-lab-4.31.1F.tar.xz ceos:4.31.1F
+  147  docker image ls
+  148  ls
+  149  cd ..
+  150  ls
+  151  git clone https://github.com/bmfernand/clab
+  152  ls
+  153  cd clab/
+  154  ls
+  155  git status
+  156  git branch
+  157  ls
+  158  cd ..
+  159  ls
+  160  rm -rf clab/
+  161  ls
+  162  git clone https://github.com/bmfernand/clab
+  163  ls
+  164  cd clab/
+  165  ls
+  166  git branch
+  167  git branch ls
+  168  git branch 
+  169  exit
+  170  htop
+  171  exit
+  172  ls
+  173  cd projs/
+  174  ls
+  175  cd clab/
+  176  ls
+  177  cd clab/
+  178  ls
+  179  cd ..
+  180  rm  -rf clab/
+  181  ls
+  182  git clone https://github.com/bmfernand/clab
+  183  cd clab/
+  184  git branch
+  185  git branch -a
+  186  git checkout l2evpn
+  187  git status
+  188  git branch
+  189  ls
+  190  cd arista_evpn_2_4_node/
+  191  ls
+  192  containerlab -h
+  193  containerlab deploy -t ./base_topo.yaml 
+  194  history | egrep ssh
+  195  ssh admin@clab-vxlan-leaf-1101
+  196  cat /etc/hosts
+  197  history 
+  198  containerlab destroy -t ./base_topo.yaml
+  199  exit
+  200  df -h
+  201  df -ha
+  202  df -h
+  203  htop
+  204  df -h
+  205  htop
+  206  df -h
+  207  ls
+  208  cd projs/
+  209  ls
+  210  cd clab/
+  211  ls
+  212  cd clab/
+  213  ls
+  214  git sttaus
+  215  git status
+  216  git branch
+  217  ls
+  218  cd arista_evpn_2_4_node/
+  219  ls
+  220  vim base_topo.yaml 
+  221  docker image ls
+  222  exit
+  223  ls
+  224  cd projs/
+  225  ls
+  226  cd clab/
+  227  ls
+  228  git clone https://github.com/hellt/vrnetlab
+  229  ls
+  230  cd ..
+  231  ls
+  232  cd clab/
+  233  ls
+  234  rm -rf vrnetlab/
+  235  cd ..
+  236  git clone https://github.com/hellt/vrnetlab
+  237  ls
+  238  cd vrnetlab/
+  239  ls
+  240  cd n9kv/
+  241  ls
+  242  cp ~/projs/clab/images/nexus9300v64.10.4.3.F.qcow2 ./
+  243  ls
+  244  make docker-image
+  245  apt install make
+  246  make docker-image
+  247  ls
+  248  ls -la
+  249  docker image ls
+  250  rm ~/projs/clab/images/nexus9300v64.10.4.3.F.qcow2 ./
+  251  rm ~/projs/clab/images/nexus9300v64.10.4.3.F.qcow2
+  252  ls
+  253  cd
+  254  ls
+  255  cd projs/clab/images/
+  256  ls
+  257  df -h
+  258  ls
+  259  cd
+  260  ls
+  261  cd projs/
+  262  ls
+  263  cd clab/
+  264  ls
+  265  mkdir n9kv
+  266  cd n9kv/
+  267  ls
+  268  touch n9kv_topo.yml
+  269  vim n9kv_topo.yml 
+  270  containerlab deploy -t ./n9
+  271  ls
+  272  containerlab inspect
+  273  containerlab -h
+  274  containerlab inspect
+  275  cd ..
+  276  ls
+  277  cd clab/
+  278  ls
+  279  cd arista_evpn_2_4_node/
+  280  ls
+  281  containerlab inspect
+  282  htop
+  283  ls
+  284  cd ..
+  285  ls
+  286  cd ..
+  287  ls
+  288  cd n9kv/
+  289  ls
+  290  cat n9kv_topo.yml 
+  291  docker image ls
+  292  docker container ls
+  293  docker container ls -a
+  294  containerlab deploy -t ./n9kv_topo.yml 
+  295  containerlab destroy -t ./n9kv_topo.yml 
+  296  containerlab deploy -t ./n9kv_topo.yml 
+  297  containerlab deploy
+  298  exit
+  299  uname -a
+  300  ls
+  301  cd projs/
+  302  ls
+  303  cd clab/
+  304  ls
+  305  cd n9kv/
+  306  docker image ls
+  307  ls
+  308  cd ..
+  309  ls
+  310  cd sample01/
+  311  ls
+  312  more srl02.clab.yml 
+  313  cd ..
+  314  ls
+  315  cd n9kv/
+  316  ls
+  317  vim n9kv_topo.yml 
+  318  ls
+  319  ls -la
+  320  rm .n9kv_topo.yml.bak 
+  321  containerlab deploy -t ./n9kv_topo.yml 
+  322  ls -la
+  323  vim n9kv_topo.yml 
+  324  containerlab deploy -t ./n9kv_topo.yml 
+  325  vim n9kv_topo.yml 
+  326  containerlab deploy -t ./n9kv_topo.yml 
+  327  mv n9kv_topo.yml base_topo.yml 
+  328  ls -la
+  329  rm .n9kv_topo.yml.bak 
+  330  containerlab deploy
+  331  containerlab deploy -t base_topo.yml 
+  332  ls
+  333  vim base_topo.yml 
+  334  mv base_topo.yml nxos_topo.yml 
+  335  ls -la
+  336  rm .base_topo.yml.bak 
+  337  containerlab deploy -t nxos_topo.yml 
+  338  docker exec -it clab-nxos-nxos01/4210fea0a1a2 bash
+  339  docker exec -it clab-nxos-nxos01 bash
+  340  docker logs -f clab-nxos-nxos01
+  341  docker exec -it clab-nxos-nxos01 bash
+  342  docker logs -f clab-nxos-nxos01
+  343  containerlab inspect
+  344  containerlab -h
+  345  containerlab inspect
+  346  containerlab inspect -t nxos_topo.yml 
+  347  docker logs -f clab-nxos-nxos01
+  348  containerlab inspect -t nxos_topo.yml 
+  349  ssh admin@172.20.20.2
+  350  ping 172.20.20.2
+  351  ssh admin@172.20.20.2
+  352  docker logs -f clab-nxos-nxos01
+  353  ssh admin@172.20.20.2
+  354  docker exec -it clab-nxos-nxos01 bash
+  355  docker logs -f clab-nxos-nxos01
+  356  docker exec -it clab-nxos-nxos01 bash
+  357  docker exec -it clab-nxos-nxos01 nxos
+  358  docker exec -it clab-nxos-nxos01 nxos_cli
+  359  docker exec -it clab-nxos-nxos01 cli
+  360  docker exec -it clab-nxos-nxos01 cli_nxos
+  361  docker exec -it clab-nxos-nxos01 sh
+  362  docker exec -it clab-nxos-nxos01 bash
+  363  ssh admin@172.20.20.2
+  364  ping 172.20.20.2
+  365  history 
+  366  containerlab inspect -t nxos_topo.yml 
+  367  docker exec -it clab-nxos-nxos01
+  368  docker exec -it clab-nxos-nxos01 serial
+  369  docker exec -it clab-nxos-nxos01 console
+  370  telnet 172.20.20.2 5000
+  371  ls
+  372  cd projs/
+  373  ls
+  374  cd clab/
+  375  ls
+  376  cd n9kv/
+  377  containerlab inspect -t nxos_topo.yml 
+  378  ls
+  379  cat clab-nxos/ansible-inventory.yml 
+  380  telnet 172.20.20.2
+  381  telnet 172.20.20.2 6030
+  382  telnet 172.20.20.2 57400
+  383  telnet 172.20.20.2 5000
+  384  history 
+  385  htop
+  386  ls
+  387  ls clab-nxos/nxos01/config/
+  388  htop
+  389  telnet 172.20.20.2 5000
+  390  cd projs/
+  391  ls
+  392  cd clab/
+  393  ls
+  394  cd sample01/
+  395  ls
+  396  cat srl02.clab.yml 
+  397  htop
+  398  docker image ls
+  399  cat srl02.clab.yml 
+  400  htop
+  401  ls
+  402  ls
+  403  cd n9kv/
+  404  ls
+  405  history 
+  406  docker image ls
+  407  docker logs -f vrnetlab/vr-n9kv:10.4.3
+  408  docker logs -f vrnetlab/vr-n9kv
+  409  docker container ls
+  410  docker logs -f 4210fea0a1a2
+  411  docker container ls
+  412  containerlab destroy -t ./n9kv_topo.yml 
+  413  ls
+  414  containerlab inspect -t ./n9kv_topo.yml 
+  415  history 
+  416  docker logs -f vrnetlab/vr-n9kv:10.4.3
+  417  pwd
+  418  ls
+  419  cd ..
+  420  ls
+  421  cd n9kv/
+  422  ls
+  423  docker logs -f 
+  424  docker container ls
+  425  docker logs -f clab-nxos-nxos01
+  426  containerlab inspect -t nxos_topo.yml 
+  427  containerlab destroy -t nxos_topo.yml 
+  428  containerlab deploy -t nxos_topo.yml 
+  429  containerlab inspect -t nxos_topo.yml 
+  430  docker logs -f clab-nxos-nxos01
+  431  ls
+  432  ssh admin@clab-vxlan-leaf-1101
+  433  containerlab inspect -t ./nxos_topo.yml 
+  434  ssh admin@172.20.20.2
+  435  ssh admin@clab-nxos-nxos01
+  436  containerlab destroy -t ./nxos_topo.yml 
+  437  docker image ls
+  438  docker container ls
+  439  docker container ls -a
+  440  docker container ls 
+  441  ls
+  442  cd clab-nxos/
+  443  ls
+  444  cd nxos01/
+  445  ls
+  446  cd config/
+  447  ls
+  448  cd ..
+  449  ls
+  450  cd ..
+  451  ls
+  452  cd ..
+  453  ls
+  454  vim nxos_topo.yml 
+  455  vim myconfig.txt
+  456  ls
+  457  history 
+  458  containerlab deploy -t nxos_topo.yml 
+  459  history 
+  460  docker logs -f clab-nxos-nxos01
+  461  containerlab destroy -t nxos_topo.yml 
+  462  docker image ls
+  463  docker run -d --name nxos --privileged vrnetlab/vr-n9kv:10.4.3
+  464  docker logs -f nxos
+  465  apt show qemu-system-x86
+  466  kvm --version
+  467  dpkg -s qemu-kvm | grep Version
+  468  history 
+  469  docker logs -f nxos
+  470  history 
+  471  docker stop nxos
+  472  ls
+  473  docker logs -f clab-nxos-nxos01
+  474  dpkg -s qemu-kvm | grep Version
+  475  kvm --version
+  476  containerlab destroy -t nxos_topo.yml 
+  477  exit
+  478  docker container ls
+  479  docker exec -it clab-nxos-nxos01 bash
+  480  telnet 172.20.20.2 5000
+  481  ssh admin@172.20.20.2
+  482  ping 172.20.20.2
+  483  docker image ls
+  484  docker container ls
+  485  htop
+  486  docker container ls
+  487  htop
+  488  docker container ls
+  489  htop
+  490  docker container ls
+  491  htop
+  492  docker container ls
+  493  docker container ls -a
+  494  apt install cpu-checker
+  495  kvm-ok 
+  496  apt install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils
+  497  ls
+  498  cd projs/
+  499  ls
+  500  cd clab/
+  501  ls
+  502  cd n9kv/
+  503  ls
+  504  containerlab deploy -t nxos_topo.yml 
+  505  htop
+  506  docker container ls
+  507  htop
+  508  docker container ls
+  509  telnet 172.20.20.2 5000
+  510  docker container ls
+  511  htop
+  512  exit
+  513  htop
+  514  docker exec -it clab-nxos-nxos01 console
+  515  docker exec -it clab-nxos-nxos01 bash
+  516  exit
+  517  htop
+  518  ls
+  519  cd projs/
+  520  ls
+  521  pwd
+  522  cd vrnetlab/
+  523  git status
+  524  git branch -a
+  525  docker ps
+  526  docker image ls
+  527  cd
+  528  ls
+  529  cd projs/
+  530  ls
+  531  cd vrnetlab/
+  532  ls
+  533  cd n9kv/
+  534  ls
+  535  rm nexus9300v64.10.4.3.F.qcow2 
+  536  mv ~/projs/clab/images/nexus9300v64.10.2.2.F.qcow2 ./
+  537  ls
+  538  df -h
+  539  ls
+  540  make docker-image
+  541  docker image ls
+  542  cd ..
+  543  ls
+  544  cd ..
+  545  ls
+  546  cd clab/
+  547  ls
+  548  cd n9kv/
+  549  ls
+  550  ls -ka
+  551  ls -la
+  552  rm .nxos_topo.yml.bak 
+  553  rm-rf  clab-nxos/
+  554  rm -rf clab-nxos/
+  555  vim nxos_topo.yml 
+  556  ls
+  557  containerlab -h
+  558  containerlab version
+  559  ls
+  560  containerlab deploy -t  nxos_topo.yml 
+  561  docker ps
+  562  cat /etc/hosts
+  563  telnet clab-nxos-nxos01 5000
+  564  ls
+  565  containerlab destroy -t  nxos_topo.yml 
+  566  ls
+  567  vim myconfig.txt 
+  568  vim nxos_topo.yml 
+  569  ls
+  570  cd
+  571  ls
+  572  cd projs/
+  573  ls
+  574  cd vrnetlab/
+  575  ls
+  576  cd n9kv/
+  577  ls
+  578  rm nexus9300v64.10.2.2.F.qcow2 
+  579  df -h
+  580  ls
+  581  mv ~/projs/clab/images/nexus9300v64.10.4.3.F.qcow2 ./
+  582  ls
+  583  history | egrep make
+  584  make docker-image
+  585  docker image ls
+  586  docker image
+  587  docker image rm -h
+  588  docker image rm -f 0d383e598aad
+  589  docker image ls
+  590  ls
+  591  make docker-image
+  592  docker image ls
+  593  docker image -h
+  594  docker image rm -h
+  595  docker image rm 
+  596  docker image rm -f vrnetlab/vr-n9kv:10.4.3
+  597  make docker-image
+  598  docker image ls
+  599  cd ..
+  600  ls
+  601  cd ..
+  602  ls
+  603  cd clab/
+  604  ls
+  605  cd n9kv/
+  606  ls
+  607  rm -rf clab-nxos/
+  608  vim nxos_topo.yml 
+  609  containerlab deploy -t ./nxos_topo.yml
+  610  docker ps
+  611  history 
+  612  history | egrep log
+  613  docker logs -f clab-nxos-nxos01
+  614  ls
+  615  containerlab destroy -t ./nxos_topo.yml 
+  616  exit
+  617  htop
+  618  history | grep log
+  619  docker logs -f clab-nxos-nxos01
+  620  ls
+  621  docker image ls
+  622  docker container ls
+  623  docker container ls -a
+  624  docker container 
+  625  docker container rm 130e723e934f
+  626  docker container ls -a
+  627  docker image ls
+  628  docker image rm 0d383e598aad
+  629  docker image ls
+  630  docker logs -f clab-nxos-nxos01
+  631  exit
+  632  ls
+  633  cd projs/
+  634  ls
+  635  cd clab/
+  636  ls
+  637  cd n9kv/
+  638  ls
+  639  rm -rf clab-nxos/
+  640  vim nxos_topo.yml 
+  641  cd
+  642  ls
+  643  cd projs/vrnetlab/
+  644  ls
+  645  cd n9kv/
+  646  ls
+  647  rm nexus9300v64.10.4.3.F.qcow2 
+  648  docker image ls
+  649  docker image rm -f 0d383e598aad
+  650  docker image ls
+  651  docker container ls
+  652  docker container ls -a
+  653  docker ps
+  654  docker ps -a
+  655  ls
+  656  mv ~/projs/clab/images/nexus9300v64.10.3.4a.M.qcow2 ./
+  657  make docker-image
+  658  ls
+  659  cat Makefile 
+  660  ls
+  661  mv nexus9300v64.10.3.4a.M.qcow2 nexus9300v64.10.3.4.M.qcow2 
+  662  make docker-image
+  663  docker image ls
+  664  cd
+  665  ls
+  666  cd projs/
+  667  ls
+  668  cd clab/n9kv/
+  669  vim nxos_topo.yml 
+  670  ls
+  671  ls -la
+  672  rm .nxos_topo.yml.bak 
+  673  containerlab deploy -t ./nxos_topo.yml 
+  674  docker ps
+  675  htop
+  676  docker ps
+  677  htop
+  678  containerlab destroy -t ./nxos_topo.yml 
+  679  docker image ls
+  680  ls
+  681  cp nxos_topo.yml nxos_topo_v2.yml 
+  682  vim nxos_topo_v2.yml 
+  683  exit
+  684  docker logs -f clab-nxos-nxos01
+  685  docker ps
+  686  exit
+  687  docker ps
+  688  docker logs -f clab-nxos-nxos01
+  689  docker logs -f clab-nxos_v2-nxos01
+  690  clab-nxos_v2-nxos01
+  691  telnet clab-nxos_v2-nxos02 5000
+  692  containerlab exec -t ./nx
+  693  ls
+  694  cd projs/
+  695  ls
+  696  cd clab/
+  697  ls
+  698  cd n9kv/
+  699  containerlab exec -t ./nxos_topo_v2.yml --cmd 'show version'
+  700  containerlab exec -t ./nxos_topo_v2.yml --cmd 'bash "show version"'
+  701  containerlab tools netem show -h
+  702  containerlab tools netem show
+  703  docker logs -f clab-nxos_v2-nxos01
+  704  docker ps
+  705  telnet clab-nxos_v2-nxos01 5000
+  706  docker logs -f clab-nxos_v2-nxos01
+  707  exit
+  708  htop
+  709  ls
+  710  cd projs/
+  711  ls
+  712  cd clab/
+  713  ls
+  714  cd n9kv/
+  715  ls
+  716  rm -rf clab-nxos/
+  717  rm .nxos_topo.yml.bak 
+  718  containerlab deploy -t ./nxos_topo_v2.yml 
+  719  htop
+  720  docker ps
+  721  htop
+  722  docker ps
+  723  htop
+  724  docker ps
+  725  htop
+  726  docker ps
+  727  telnet clab-nxos_v2-nxos01 5000
+  728  alias cl="containerlab"
+  729  cl
+  730  cl destroy -t ./nxos_topo_v2.yml 
+  731  ls
+  732  vim nxos_topo_v2.yml 
+  733  cl deploy -t ./nxos_topo_v2.yml 
+  734  docker ps
+  735  cl destroy -t ./nxos_topo_v2.yml 
+  736  ls
+  737  cp myconfig.txt nxos01.txt
+  738  vim nxos01.txt 
+  739  cp nxos01.txt nxos02.txt
+  740  cp nxos01.txt nxos03.txt
+  741  ls
+  742  vim nxos_topo.yml 
+  743  vim nxos_topo_v2.yml 
+  744  vim nxos01.txt 
+  745  cp nxos01.txt nxos02.txt 
+  746  vim nxos02.txt 
+  747  cl deploy -t ./nxos_topo_v2.yml 
+  748  ls 
+  749  ls clab-nxos_v2/nxos01/config/
+  750  cat clab-nxos_v2/nxos01/config/startup-config.cfg 
+  751  htop
+  752  docker ps
+  753  htop
+  754  docker ps
+  755  htop
+  756  ls
+  757  vim nxos01.txt 
+  758  history
+  759  cl destroy -t ./nxos_topo_v2.yml 
+  760  ls
+  761  vim nxos01.txt 
+  762  vim nxos02.txt 
+  763  ls
+  764  vim nxos03.txt 
+  765  cl deploy -t ./nxos_topo_v2.yml 
+  766  htop
+  767  docker ps
+  768  htop
+  769  docker ps
+  770  htop
+  771  docker ps
+  772  htop
+  773  docker ps
+  774  telnet clab-nxos_v2-nxos01
+  775  telnet clab-nxos_v2-nxos01 5000
+  776  cl destroy -t ./nxos_topo_v2.yml 
+  777  exit
+  778  htop
+  779  ip link
+  780  ls
+  781  cd projs/
+  782  ls
+  783  cd clab/
+  784  ls
+  785  cd n9kv/
+  786  ls
+  787  cd clab-nxos_v2/
+  788  ls
+  789  cd nxos01/
+  790  ls
+  791  cd config/
+  792  ls
+  793  docker
+  794  containerlab
+  795  containerlab tools
+  796  containerlab tools vxlan -h
+  797  containerlab tools vxlan
+  798  containerlab 
+  799  containerlab save -h
+  800  containerlab save
+  801  containerlab save -t 
+  802  ls
+  803  cd ..
+  804  ls
+  805  cd ..
+  806  ls
+  807  containerlab save -t ./nxos_topo_v2.yml 
+  808  ls
+  809  more nxos_topo_v2.yml 
+  810  ls clab-nxos_v2/nxos01/config/
+  811  containerlab
+  812  containerlab exec -h
+  813  containerlab 
+  814  containerlab config -h
+  815  htop
+  816  docker ps
+  817  htop
+  818  docker ps
+  819  htop
+  820  docker ps
+  821  htop
+  822  docker ps
+  823  ls clab-nxos_v2/nxos01/config/
+  824  exit
+  825  docker ps
+  826  docker container ls
+  827  docker container ls -al
+  828  ls
+  829  cd projs/
+  830  ls
+  831  cd clab/
+  832  ls
+  833  cd n9kv/
+  834  ls
+  835  alias cl="containerlab"
+  836  cl -h
+  837  cl destroy -t ./nxos_topo_v2.yml 
+  838  cl dploy -t ./nxos_topo_v2.yml 
+  839  cl deploy -t ./nxos_topo_v2.yml
+  840  cl destroy -t ./nxos_topo_v2.yml
+  841  cl version -h
+  842  cl version upgrade
+  843  cl deploy -t ./nxos_topo_ipn.yml 
+  844  cl destroy -t ./nxos_topo_ipn.yml 
+  845  cl deploy -t ./nxos_topo_ipn.yml 
+  846  history | grep log
+  847  docker logs -f clab-nxos_ipn-ipn-a-01
+  848  cl
+  849  docker ps
+  850  cl
+  851  cl inspect
+  852  cl inspect -t ./nxos_topo_ipn.yml 
+  853  docker logs -f clab-nxos_ipn-ipn-a-01
+  854  cl inspect -t ./nxos_topo_ipn.yml 
+  855  docker ps
+  856  docker logs -f clab-nxos_ipn-ipn-a-01
+  857  docker ps
+  858  docker logs -f clab-nxos_ipn-ipn-a-01
+  859  docker ps
+  860  docker logs -f clab-nxos_ipn-ipn-a-01
+  861  docker logs -f clab-nxos_ipn-ipn-a-02
+  862  docker image ls
+  863  ls
+  864  more nxos_topo_ipn.yml 
+  865  more nxos_topo_v2.yml 
+  866  docker logs -f clab-nxos_ipn-ipn-a-02
+  867  docker ps
+  868  history 
+  869  cl inspect -t ./nxos_topo_ipn.yml 
+  870  history | grep telnet
+  871  history 
+  872  history | ts
+  873  history | gre ts
+  874  history | gre t
+  875  history | grep t
+  876  history | grep ts
+  877  history | grep wi
+  878  history | grep tcp
+  879  cl destroy -t ./nxos_topo_ipn.yml 
+  880  ls
+  881  cd ..
+  882  ls
+  883  cd clab/
+  884  ls
+  885  git status
+  886  git branch
+  887  cd l2evpn
+  888  ls
+  889  cd arista_evpn_2_4_node/
+  890  ls
+  891  cd configs/
+  892  ks
+  893  ls
+  894  ls -la
+  895  more leaf-1101.cfg 
+  896  history 
+  897  history | grep tcp
+  898  history 1 | grep netns
+  899  cd
+  900  ls
+  901  cd snap/
+  902  ls
+  903  cd ..
+  904  cd projs/
+  905  cd
+  906  ls
+  907  pwd
+  908  cd /home/
+  909  ls
+  910  cd bmfernand/
+  911  ls
+  912  cd ../ubuntu/
+  913  ls
+  914  cd
+  915  cd /tmp/
+  916  ls
+  917  cd
+  918  history | grep rm
+  919  cd
+  920  cd projs/
+  921  ls
+  922  cd clab/
+  923  ls
+  924  cd images/
+  925  ls
+  926  cd
+  927  history | grep docker
+  928  history | grep docker image
+  929  history | grep "docker image"
+  930  history | grep "docker"
+  931  history | grep "docker image"
+  932  history | grep "import"
+  933  ls
+  934  cd projs/
+  935  ls
+  936  cd clab/
+  937  ls
+  938  cd clab/
+  939  ls
+  940  cd ../
+  941  ls
+  942  cd images/
+  943  ls
+  944  cd ..
+  945  cd n9kv/
+  946  ls
+  947  cd ..
+  948  ls
+  949  cd sample01/
+  950  ls
+  951  cd ..
+  952  history 
+  953  history | more
+  954  cl tools
+  955  exit
+  956  htop
+  957  telnet clab-nxos_ipn-ipn-a-01 5000
+  958  ls
+  959  cd snap/
+  960  ls
+  961  cd
+  962  ls
+  963  history 
+  964  history | grep docker
+  965  history | grep docker import
+  966  history | grep "docker import"
+  967  docker image ls
+  968  history | grep qemu
+  969  history | more
+  970  history | grep make
+  971  history 
+  972  history | more
+  973  docker image ls
+  974  ls
+  975  cd projs/
+  976  ls
+  977  cd vrnetlab/
+  978  ls
+  979  cd nxos/
+  980  ls
+  981  cd
+  982  ls
+  983  cd projs/
+  984  ls
+  985  cd clab/
+  986  ls
+  987  git status
+  988  ls
+  989  cd images/
+  990  ls
+  991  ls -la
+  992  cd ..
+  993  ls
+  994  cd clab/
+  995  ls
+  996  git status
+  997  history | more
+  998  ls
+  999  cd ..
+ 1000  ls
+ 1001  cd n9kv/
+ 1002  ls
+ 1003  git status
+ 1004  cd ..
+ 1005  ls
+ 1006  cd sample01/
+ 1007  ls
+ 1008  git status
+ 1009  cd ..
+ 1010  ls
+ 1011  git status
+ 1012  ls
+ 1013  cd clab/
+ 1014  git status
+ 1015  cd ..
+ 1016  ls
+ 1017  cd n9kv/
+ 1018  ls
+ 1019  tree 
+ 1020  ls
+ 1021  ls clab-nxos_v2/
+ 1022  ls
+ 1023  cd clab-nxos_
+ 1024  cd clab-nxos_v2/
+ 1025  ls
+ 1026  git status
+ 1027  cd ..
+ 1028  ls
+ 1029  git status
+ 1030  ls clab-nxos_ipn/
+ 1031  echo "# n9kv" >> README.md
+ 1032  git init
+ 1033  git add README.md 
+ 1034  git status
+ 1035  git add *.txt
+ 1036  git status
+ 1037  git add *.yml
+ 1038  git status
+ 1039  ls clab-nxos_ipn/
+ 1040  git commit -m "INIT"
+ 1041  git --global user.name "Bruno Fernandes"
+ 1042  git config --global user.name "Bruno Fernandes"
+ 1043  git config --global user.email bmfernand@gmail.com
+ 1044  git status
+ 1045  git branch -M main
+ 1046  git remote add origin https://github.com/bmfernand/n9kv.git
+ 1047  git push -u origin main
+ 1048  git status
+ 1049  history 
+ 1050  history > history.log
