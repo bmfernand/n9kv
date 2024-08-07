@@ -1,0 +1,16 @@
+feature bash-shell
+!
+username admin password admin
+no ip domain-lookup
+!
+!
+feature nxapi
+feature scp-server
+!
+line vty
+  exec-timeout 0
+!
+interface mgmt0
+  ip address dhcp
+  no shutdown
+!

@@ -1,0 +1,6 @@
+!
+no ip domain-lookup
+!
+feature lldp
+feature ospf
+!

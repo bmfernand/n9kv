@@ -1,0 +1,27 @@
+name: nxos_ipn
+
+topology:
+  nodes:
+    ipn-a-01:
+      kind: cisco_n9kv
+      image: vrnetlab/vr-n9kv:10.3.4
+      # startup-config: ipn-a-01.txt
+    ipn-a-02:
+      kind: cisco_n9kv
+      image: vrnetlab/vr-n9kv:10.3.4
+      # startup-config: ipn-a-02.txt
+    ipn-b-01:
+      kind: cisco_n9kv
+      image: vrnetlab/vr-n9kv:10.3.4
+      # startup-config: ipn-b-01.txt
+    ipn-b-02:
+      kind: cisco_n9kv
+      image: vrnetlab/vr-n9kv:10.3.4
+      # startup-config: ipn-b-02.txt
+  links:
+    - endpoints: ["ipn-a-01:eth1", "ipn-b-01:eth1"]
+    - endpoints: ["ipn-a-02:eth1", "ipn-b-02:eth1"]
+    - endpoints: ["ipn-a-01:eth47", "ipn-a-02:eth47"]
+    - endpoints: ["ipn-a-01:eth48", "ipn-a-02:eth48"]
+    - endpoints: ["ipn-b-01:eth47", "ipn-b-02:eth47"]
+    - endpoints: ["ipn-b-01:eth48", "ipn-b-02:eth48"]

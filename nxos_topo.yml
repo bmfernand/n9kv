@@ -1,0 +1,9 @@
+name: nxos
+
+topology:
+  nodes:
+    nxos01:
+      kind: cisco_n9kv
+      # image: vrnetlab/vr-n9kv:10.2.2
+      # image: vrnetlab/vr-n9kv:10.4.3
+      image: vrnetlab/vr-n9kv:10.3.4
