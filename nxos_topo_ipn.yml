@@ -5,7 +5,7 @@ topology:
     ipn-a-01:
       kind: cisco_n9kv
       image: vrnetlab/vr-n9kv:10.3.4
-      # startup-config: ipn-a-01.txt
+      startup-config: ipn-a-01.cfg
     ipn-a-02:
       kind: cisco_n9kv
       image: vrnetlab/vr-n9kv:10.3.4
@@ -18,6 +18,14 @@ topology:
       kind: cisco_n9kv
       image: vrnetlab/vr-n9kv:10.3.4
       # startup-config: ipn-b-02.txt
+#    h-pod01:
+#      kind: cisco_n9kv
+#      image: vrnetlab/vr-n9kv:10.3.4
+#      # startup-config: ipn-b-02.txt
+#    h-pod02:
+#      kind: cisco_n9kv
+#      image: vrnetlab/vr-n9kv:10.3.4
+#      # startup-config: ipn-b-02.txt
   links:
     - endpoints: ["ipn-a-01:eth1", "ipn-b-01:eth1"]
     - endpoints: ["ipn-a-02:eth1", "ipn-b-02:eth1"]
