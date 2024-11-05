@@ -5,7 +5,7 @@ topology:
     ipn-a-01:
       kind: cisco_n9kv
       image: vrnetlab/vr-n9kv:10.3.4
-      startup-config: ipn-a-01.cfg
+      # startup-config: ipn-a-01.cfg
     ipn-a-02:
       kind: cisco_n9kv
       image: vrnetlab/vr-n9kv:10.3.4
