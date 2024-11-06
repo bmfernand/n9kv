@@ -33,3 +33,7 @@ topology:
     - endpoints: ["ipn-a-01:eth48", "ipn-a-02:eth48"]
     - endpoints: ["ipn-b-01:eth47", "ipn-b-02:eth47"]
     - endpoints: ["ipn-b-01:eth48", "ipn-b-02:eth48"]
+    - endpoints: ["h-pod01:G1", "ipn-a-01:eth49"]
+    - endpoints: ["h-pod01:G2", "ipn-a-02:eth49"]
+    - endpoints: ["h-pod02:G1", "ipn-b-01:eth49"]
+    - endpoints: ["h-pod02:G2", "ipn-b-02:eth49"]
