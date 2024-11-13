@@ -9,7 +9,7 @@
 
   tasks:
     - name: INITIAL SNAPSHOT
-      cisco.nxos.nxos_commad:
+      cisco.nxos.nxos_command:
         commands:
       tags:
         - snapshot
