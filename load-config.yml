@@ -11,6 +11,7 @@
     - name: INITIAL SNAPSHOT
       cisco.nxos.nxos_command:
         commands:
+          - 'checkpoint INIT description Initial_config'
       tags:
         - snapshot
 
