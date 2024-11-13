@@ -8,7 +8,15 @@
   gather_facts: false
 
   tasks:
+    - name: INITIAL SNAPSHOT
+      cisco.nxos.nxos_commad:
+        commands:
+      tags:
+        - snapshot
+
     - name: TEST
       cisco.nxos.nxos_config:
-        src: "{{ config_file }}" 
+        src: "{{ config_file }}"
+      tags:
+        - deploy
 ...
