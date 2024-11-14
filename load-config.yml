@@ -11,6 +11,11 @@
     - name: INITIAL SNAPSHOT
       cisco.nxos.nxos_command:
         commands:
+          - 'no feature telnet'
+          - 'no feature nxapi'
+          - 'no feature scp-server'
+          - 'no feature netconf'
+          - 'no feature grpc'
           - 'checkpoint INIT description Initial_config'
       tags:
         - snapshot
