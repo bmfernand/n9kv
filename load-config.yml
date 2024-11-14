@@ -15,7 +15,7 @@
       tags:
         - snapshot
 
-    - name: INITIAL SNAPSHOT
+    - name: RELOAD IN
       cisco.nxos.nxos_command:
         commands:
           - 'reload in 600'
