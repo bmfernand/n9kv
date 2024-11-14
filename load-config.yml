@@ -15,6 +15,13 @@
       tags:
         - snapshot
 
+    - name: INITIAL SNAPSHOT
+      cisco.nxos.nxos_command:
+        commands:
+          - 'reload in 600'
+      tags:
+        - reload_in
+
     - name: TEST
       cisco.nxos.nxos_config:
         src: "{{ config_file }}"
