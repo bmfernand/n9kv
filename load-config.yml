@@ -16,7 +16,8 @@
           - 'no feature scp-server'
           - 'no feature netconf'
           - 'no feature grpc'
-          - 'system default switchport'
+          - 'no system default switchport'
+          - 'system default switchport shutdown'
           - 'checkpoint INIT description Initial_config'
       tags:
         - snapshot
