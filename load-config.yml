@@ -36,5 +36,5 @@
     - name: Cancel Reload
       cisco.nxos.nxos_command:
         commands:
-          - 'cancel reload'
+          - 'reload cancel'
 ...
