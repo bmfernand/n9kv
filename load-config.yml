@@ -21,15 +21,18 @@
               - 'no system default switchport'
               - 'system default switchport shutdown'
 
-        - name: Pause for 30s
+        - name: Pause for 60s
           ansible.builtin.pause:
-            minutes: 1
+            seconds: 60
 
         - name: Create Initial SNAPSHOT
           cisco.nxos.nxos_command:
             commands:
               - 'checkpoint INIT description Initial_config'
 
+        - name: Pause for 60s
+          ansible.builtin.pause:
+            seconds: 60
       tags:
         - snapshot
 
