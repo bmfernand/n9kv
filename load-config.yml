@@ -19,12 +19,14 @@
       cisco.nxos.nxos_command:
         commands:
           - 'reload in 600'
+      when: ansible_host == '10.166.30.51'
       tags:
         - reload_in
 
     - name: TEST
       cisco.nxos.nxos_config:
         src: "{{ config_file }}"
+      when: ansible_host == '10.166.30.51'
       tags:
         - deploy
 ...
