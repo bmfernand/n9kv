@@ -8,22 +8,23 @@
   gather_facts: false
 
   tasks:
-    block:
-      - name: INITIAL SNAPSHOT
-        cisco.nxos.nxos_command:
-          commands:
-            - 'checkpoint INIT description Initial_config'
+    - name: INITIAL SETUP
+      block:
+        - name: Create Initial SNAPSHOT
+          cisco.nxos.nxos_command:
+            commands:
+              - 'checkpoint INIT description Initial_config'
 
-      - name: CLEAN Config
-        cisco.nxos.nxos_config:
-          lines:
-            - 'no feature telnet'
-            - 'no feature nxapi'
-            - 'no feature scp-server'
-            - 'no feature netconf'
-            - 'no feature grpc'
-            - 'no system default switchport'
-            - 'system default switchport shutdown'
+        - name: Make Some cleanning
+          cisco.nxos.nxos_config:
+            lines:
+              - 'no feature telnet'
+              - 'no feature nxapi'
+              - 'no feature scp-server'
+              - 'no feature netconf'
+              - 'no feature grpc'
+              - 'no system default switchport'
+              - 'system default switchport shutdown'
       tags:
         - snapshot
 
