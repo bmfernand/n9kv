@@ -23,10 +23,18 @@
       tags:
         - reload_in
 
-    - name: TEST
+    - name: Deply config
       cisco.nxos.nxos_config:
         src: "{{ config_file }}"
       when: ansible_host == '10.166.30.51'
+      notify:
+        - Cancel Reload
       tags:
         - deploy
+
+  handlers:
+    - name: Cancel Reload
+      cisco.nxos.nxos_command:
+        commands:
+          - 'reload in 600'
 ...
